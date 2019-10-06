@@ -29,4 +29,11 @@ public class Hero implements Comparable<Hero> {
 		// TODO Auto-generated method stub
 		return 0;
 	}
+
+	// afin de ne pas afficher l'adresse de l'objet mais son contenu on redefinit la
+	// methode toString
+	@Override
+	public String toString() {
+		return this.name + " agé de " + this.age + " ans";
+	}
 }
